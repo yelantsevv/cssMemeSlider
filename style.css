@@ -3,11 +3,10 @@
   padding: 0;
 }
 :root {
-  font-size: 16px;
   --colorBar: #7bb2ee;
   --colorActive: #ffffff;
   --colorBg: #545454;
-  --widthSlide: clamp(500px, 95vw, 1024px);
+  --widthSlide: clamp(20rem, 95vw, 120rem);
 }
 body {
   background: var(--colorBg);
@@ -16,11 +15,10 @@ body {
 .slider {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: var(--widthSlide);
-  height: clamp(320px, 60vw, 600px);
+  height: clamp(33.5rem, 60vw, 67.5rem);
   overflow: hidden;
-  /* border: 1px solid #000; */
 }
 
 .nav {
@@ -28,16 +26,16 @@ body {
   width: var(--widthSlide);
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0.5rem;
 }
 .navigation {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .bar {
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: var(--colorBar);
   cursor: pointer;
@@ -58,7 +56,7 @@ input {
 
 .slide_box {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 3rem);
   display: flex;
 }
 
@@ -78,7 +76,7 @@ img {
 
 .text_box {
   display: flex;
-  font-size: 30px;
+  font-size: 2rem;
   width: 100%;
 }
 
@@ -129,11 +127,11 @@ img {
   margin-left: -75%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .nav {
     flex-direction: column-reverse;
   }
   .slide_box {
-    height: calc(100% - 80px);
+    height: calc(100% - 5rem);
   }
 }
